@@ -13,6 +13,12 @@ class Grid:
         """Draws the grid to the screen"""
         for ro in range(self.rows):
             for col in range(self.columns):
+                # cell_value will change according to the number in the grid
                 cell_value = self.grid[ro][col]
-                cell_rect = pygame.Rect(col * self.tile_size + 1, ro * self.tile_size + 1, self.tile_size - 1, self.tile_size - 1)
-                pygame.draw.rect(screen, self.colors[0], cell_rect)
+                # col is the x axis, ro is the y axis, tile_size is the width and height
+                x = col * self.tile_size + 1
+                y = ro * self.tile_size + 1
+                width_height = self.tile_size - 1
+                cell_rect = pygame.Rect(x, y, width_height, width_height)
+                # color is changed according to the number in cell_value
+                pygame.draw.rect(screen, self.colors[cell_value], cell_rect)
