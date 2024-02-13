@@ -17,5 +17,6 @@ while True:
             sys.exit()
 
     screen.fill(background)
+    grid.draw_grid(screen)
     pygame.display.update()
     clock.tick(60)

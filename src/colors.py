@@ -12,4 +12,4 @@ class Colors:
 
     @classmethod
     def get_color(cls):
-        return [cls.red, cls.yellow, cls.green, cls.salmon, cls.gold, cls.indigo, cls.thistle, cls.turq, cls.pink]
+        return [cls.turq, cls.yellow, cls.green, cls.salmon, cls.gold, cls.indigo, cls.thistle, cls.red, cls.pink]
