@@ -1,8 +1,10 @@
 import pygame, sys
+from colors import Colors#
+from grid import Grid
 
 pygame.init()
-background = (135, 25, 55)
-
+background = Colors.background
+grid = Grid()
 screen = pygame.display.set_mode((600, 480))
 pygame.display.set_caption("Tetris")
 
