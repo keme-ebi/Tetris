@@ -8,17 +8,17 @@ class Blocks:
         self.id = id
         self.cells = {}
         self.cell_size = 30
-        self.rotate = 0
+        self.rot = 0
         self.colors = Colors.get_color()
         self.y_offset = 0
         self.x_offset = 0
 
     def move(self, y, x):
-        self.y_offset = y
-        self.x_offset = x
+        self.y_offset += y
+        self.x_offset += x
 
     def cell_pos(self):
-        tiles = self.cells[self.rotate]
+        tiles = self.cells[self.rot]
         new_pos = []
         for ti in tiles:
             ti = P(ti.y + self.y_offset, ti.x + self.x_offset)
@@ -34,3 +34,15 @@ class Blocks:
             width_height = self.cell_size - 1
             tile_rect = pygame.Rect(bx, by, width_height, width_height)
             pygame.draw.rect(screen, self.colors[self.id], tile_rect)
+
+    def rotation(self):
+        length = len(self.cells)
+        self.rot += 1
+        if self.rot == length:
+            self.rot = 0
+
+    def un_rotate(self):
+        length = len(self.cells)
+        self.rot -= 1
+        if self.rot == 0:
+            self.rot = length - 1
