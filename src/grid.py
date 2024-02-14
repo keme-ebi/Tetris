@@ -22,3 +22,8 @@ class Grid:
                 cell_rect = pygame.Rect(x, y, width_height, width_height)
                 # color is changed according to the number in cell_value
                 pygame.draw.rect(screen, self.colors[cell_value], cell_rect)
+
+    def grid_check(self, y, x):
+        if y >= 0 and y < self.rows and x >= 0 and x < self.columns:
+            return True
+        return False
