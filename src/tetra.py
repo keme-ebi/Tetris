@@ -25,12 +25,12 @@ class Blocks:
             new_pos.append(ti)
         return new_pos
 
-    def draw_block(self, screen):
+    def draw_block(self, screen, offset_x, offset_y):
         tiles = self.cell_pos()
         for tile in tiles:
             # bx represents the column, by the row
-            by = tile.y * self.cell_size  + 1
-            bx = tile.x * self.cell_size  + 1
+            by = offset_y + tile.y * self.cell_size
+            bx = offset_x + tile.x * self.cell_size
             width_height = self.cell_size - 1
             tile_rect = pygame.Rect(bx, by, width_height, width_height)
             pygame.draw.rect(screen, self.colors[self.id], tile_rect)
@@ -38,7 +38,7 @@ class Blocks:
     def rotation(self):
         length = len(self.cells)
         self.rot += 1
-        if self.rot == length:
+        if self.rot == length or self.rot < 0:
             self.rot = 0
 
     def un_rotate(self):
