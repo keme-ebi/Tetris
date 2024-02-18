@@ -11,6 +11,7 @@ class Game:
         self.next = self.random_block()
         self.game_over = False
         self.score = 0
+        self.pause = False
 
     def keypress(self, update):
         for event in pygame.event.get():
@@ -29,6 +30,8 @@ class Game:
                     self.move_down()
                 if event.key == pygame.K_UP and self.game_over == False:
                     self.rotate()
+                if event.key == pygame.K_SPACE and self.game_over == False:
+                    self.pause_game()
             if event.type == update and self.game_over == False:
                 self.move_down()
 
@@ -37,6 +40,17 @@ class Game:
         self.tetraminoes = [LBlock(), JBlock(), TBlock(), IBlock(), SquareBlock(), HBlock(), HInvertBlock(), HIlongBlock(), HlongBlock(), ZBlock(), SBlock(), UBlock(), TridentBlock(), CrossBlock()]
         self.current = self.random_block()
         self.next = self.random_block()
+
+    def pause_game(self):
+        self.pause = True
+        while self.pause:
+            for event in pygame.event.get():
+                if event.type == pygame.QUIT:
+                    pygame.quit()
+                    sys.exit()
+                if event.type == pygame.KEYDOWN:
+                    if event.key == pygame.K_SPACE:
+                        self.pause = False
 
     def random_block(self):
         if len(self.tetraminoes) == 0:
