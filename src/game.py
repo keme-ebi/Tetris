@@ -19,7 +19,7 @@ class Game:
                 pygame.quit()
                 sys.exit()
             if event.type == pygame.KEYDOWN:
-                if self.game_over == True:
+                if event.key == pygame.K_RETURN and self.game_over == True:
                     self.game_over = False
                     self.reset()
                 if event.key == pygame.K_LEFT and self.game_over is False:
