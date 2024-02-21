@@ -13,7 +13,22 @@ If you're using a code editor like visual studio codes, you can just hit the run
 Once you get the feel on how it works, if you like, for developers, you can tweak it to your liking.
 
 On a recent development, an executable has been made for this game, though it'll only work on windows, so if you'd like to download the executable without compiling the full code, you download the build file and double click on main.
-Currently cx_Freeze only compiles per operating system, so if you're a mac or linux user, you'd have to get the full code, compile and build it using the setup.py
+Currently cx_Freeze only compiles per operating system, so if you're a mac or linux user, you'd have to get the full code, compile and build it using the setup.py with little adjustment.
+
+### Installing using the executable
+
+- From the Github, click on the **dist** folder
+- Click on **Tetris-win64.msi**
+  ![screenshot of github showing where the dist folder is](/imgs/git1.png)
+- Click on view raw or the download icon to download the raw file
+  ![screenshot of the msi file to click on](/imgs/git2.png)
+- Wait for download to complete
+  ![screenshot of download in progress](/imgs/git3.png)
+
+- Go to the folder where the raw file has been downloaded and double click on the file
+  ![screenshot of file explorer showing downloaded msi file](/imgs/setup1.png)
+- A setup window appears asking where you'd like to install the game, choose your desired folder and click next. After installation, click on finish
+  ![screenshot of setup window for installing of executable](/imgs/setup2.png)
 
 ## How to play
 
