@@ -123,12 +123,12 @@ class Game:
         self.current.draw_block(screen, 1, 1)
         # draw next block and aligns the according to their id
         if self.next.id == 5:
-            self.next.draw_block(screen, 250, 260)
+            self.next.draw_block(screen, 250, 190)
         elif self.next.id == 2:
-            self.next.draw_block(screen, 250, 240)
+            self.next.draw_block(screen, 250, 180)
         else:
             # default alignment for blocks that appear in the middle
-            self.next.draw_block(screen, 270, 240)
+            self.next.draw_block(screen, 270, 180)
 
     def move_left(self):
         """move the block left"""

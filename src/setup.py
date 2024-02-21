@@ -14,6 +14,7 @@ executables = [cx_Freeze.Executable("src\main.py", base=base)]
 # setup
 cx_Freeze.setup(
     name="Tetris",
+    version="0.2",
     options={"build_exe": {"packages": ["pygame"]}},
     description="Tetris Game",
     executables=executables
