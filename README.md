@@ -27,8 +27,13 @@ Currently cx_Freeze only compiles per operating system, so if you're a mac or li
 
 - Go to the folder where the raw file has been downloaded and double click on the file
   ![screenshot of file explorer showing downloaded msi file](/imgs/setup1.png)
-- A setup window appears asking where you'd like to install the game, choose your desired folder and click next. After installation, click on finish
+- A setup window appears asking where you'd like to install the game, choose your desired folder and click next.
   ![screenshot of setup window for installing of executable](/imgs/setup2.png)
+- After installation, click on finish.
+- Locate the directory the installation was done on
+  ![screenshot of directory installation was done on](/imgs/setup3.png)
+- Look for main and double click it, the game window will open up, now you enjoy
+  ![screenshot of the tetris game after successful execution](/imgs/tetris.png)
 
 ## How to play
 
