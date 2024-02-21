@@ -1,5 +1,7 @@
 # Tetris
 
+![cover of the tetris game](/imgs/cover.png)
+
 This is a tetris game made with pygame module in Python. The game aims to kill boredom and help relieve stress. This is a portfolio project done as the last project in ALX software engineering course foundation phase. This project came to be because of my love for games and it was also inspired by an X user [John Crickett](https://twitter.com/johncrickett), a software engineer who puts up coding challenges weekly for software engineers to use in gaining more experience coding. This game utilises the power of Object Oriented Programming(OOP) in order to make each blocks or tetraminoes have unique attributes and behavior. Also, cx_Freeze was used in other to make an executable of the game, this way even those who are not programmers can easily get it and have fun with it. Believe it or not I struggled with choosing the right colors for the blocks, I still don't feel the current colors are a good fit. Another area of struggle currently, is creating a game menu so that users can choose difficulty level, toggle game sound, and get their high score displayed after exiting the game. These are some features to look out for in upcoming releases.
 
 ## Installation
