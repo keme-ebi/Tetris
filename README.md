@@ -1,6 +1,8 @@
 # Tetris
 
-This is a tetris game made with pygame module in Python. The game aims to kill boredom and help relieve stress. This is a portfolio project done as the last project in ALX software engineering course foundation phase. This project was also inspired by an X user who puts up coding challenges weekly for software engineers to use in gaining more experience coding
+![cover of the tetris game](/imgs/cover.png)
+
+This is a tetris game made with pygame module in Python. The game aims to kill boredom and help relieve stress. This is a portfolio project done as the last project in ALX software engineering course foundation phase. This project came to be because of my love for games and it was also inspired by an X user [John Crickett](https://twitter.com/johncrickett), a software engineer who puts up coding challenges weekly for software engineers to use in gaining more experience coding. This game utilises the power of Object Oriented Programming(OOP) in order to make each blocks or tetraminoes have unique attributes and behavior. Also, cx_Freeze was used in other to make an executable of the game, this way even those who are not programmers can easily get it and have fun with it. Believe it or not I struggled with choosing the right colors for the blocks, I still don't feel the current colors are a good fit. Another area of struggle currently, is creating a game menu so that users can choose difficulty level, toggle game sound, and get their high score displayed after exiting the game. These are some features to look out for in upcoming releases.
 
 ## Installation
 
@@ -11,6 +13,11 @@ After cloning or forking the repo, if you'd like to run the program:
 `python -u "c:\Users\HP\name_of_folder_cloned_to\Tetris\src\main.py"`.
 If you're using a code editor like visual studio codes, you can just hit the run button and it'll be done automatically for you.
 Once you get the feel on how it works, if you like, for developers, you can tweak it to your liking.
+If you'd like to create your own executable after tweaking to your liking, you can use this command in the folder where everything is cloned to
+`python src\setup.py bidst_msi`.
+This would create an msi executable that can be installed by anyone.
+If you'd just like to create the executable for your use only, then run:
+`python src\setup.py build`.
 
 On a recent development, an executable has been made for this game, though it'll only work on windows, so if you'd like to download the executable without compiling the full code, you download the build file and double click on main.
 Currently cx_Freeze only compiles per operating system, so if you're a mac or linux user, you'd have to get the full code, compile and build it using the setup.py with little adjustment.

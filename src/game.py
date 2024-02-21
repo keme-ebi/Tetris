@@ -65,6 +65,7 @@ class Game:
         # reset both current and next block
         self.current = self.random_block()
         self.next = self.random_block()
+        self.score = 0
 
     def pause_game(self):
         """Pauses the game"""
