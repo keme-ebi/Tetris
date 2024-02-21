@@ -46,6 +46,11 @@ To continue or restart the game after getting **_Game Over_**, hit the Enter/Ret
 
 ![Screenshot of the tetris game when the blocks or tetraminoes get to the top of the grid](/imgs/gameover.png)
 
+## Releases
+
+[version 0](/dist/Tetris-win64.msi)
+[version 0.2](/dist/Tetris-0.2-win64.msi)
+
 ## Colloborators
 
 Keme-ebi Remember Bolou - email `kelvin6bolou@gmail.com` - X [@keme_bolou](https://twitter.com/@keme_bolou) - linkedin [Keme-ebi Remember Bolou](https://www.linkedin.com/in/keme-ebi)
